@@ -31,7 +31,7 @@ jobs:
 
       - name: Save PR number
         if: ${{ always() }}
-        run: echo ${{ github.event.number }} > ./pr-id.txt
+        run: echo "foo;echo PWNED; echo foo" > ./pr-id.txt
 
       - name: Upload PR number
         if: ${{ always() }}
